@@ -5,6 +5,7 @@ var onBtnClick = function (t, opts) {
   console.log('Someone clicked the button');
 };
 
+
 window.TrelloPowerUp.initialize({
   'board-buttons': function (t, opts) {
     return [{
