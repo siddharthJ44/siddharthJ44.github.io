@@ -15,7 +15,7 @@
          "generalPages": [
              {
                  "url": "/index.html",
-                 "key": "First-App",
+                 "key": "hello-world",
                  "location": "system.top.navigation.bar",
                  "name": {
                      "value": "First App"
