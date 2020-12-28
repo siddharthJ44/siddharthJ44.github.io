@@ -1,5 +1,5 @@
   {
-     "name": "Hello World",
+     "name": "First App",
      "description": "Atlassian Connect app",
      "key": "com.example.myapp",
      "baseUrl": "https://siddharthj44.github.io",
@@ -15,7 +15,7 @@
          "generalPages": [
              {
                  "url": "/index.html",
-                 "key": "hello-world",
+                 "key": "First-App",
                  "location": "system.top.navigation.bar",
                  "name": {
                      "value": "First App"
