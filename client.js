@@ -9,17 +9,6 @@ var onBtnClick = function (t, opts) {
 window.TrelloPowerUp.initialize({
   'board-buttons': function (t, opts) {
     return [{
-      // we can either provide a button that has a callback function
-      /*icon: {
-        dark: WHITE_ICON,
-        light: BLACK_ICON
-      },
-      text: 'ThoughtFlow MindMap',
-      callback: onBtnClick,
-      condition: 'edit'
-    }, {*/
-      // or we can also have a button that is just a simple url
-      // clicking it will open a new tab at the provided url
       icon: {
         dark: WHITE_ICON,
         light: BLACK_ICON
@@ -29,5 +18,20 @@ window.TrelloPowerUp.initialize({
       url: 'https://siddharthj44.github.io/indexnew.html',
       target: 'Inspiring Boards' // optional target for above url
     }];
+  },
+  'card-back-section': function(t, options){
+    return {
+      title: 'My Card Back Section',
+      icon: GRAY_ICON, // Must be a gray icon, colored icons not allowed.
+      content: {
+        type: 'iframe',
+        url: t.signUrl('./section.html'),
+        height: 230, // Max height is 1500.
+        action: {
+          text: 'My Action',
+          callback: (t) => t.popup(...),
+        },
+      }
+    };
   }
 });
