@@ -15,8 +15,13 @@ window.TrelloPowerUp.initialize({
       },
       text: 'ThoughtFlow Mindmap',
       condition: 'always',
-      url: 'https://siddharthj44.github.io/indexnew.html',
-      target: 'Inspiring Boards' // optional target for above url
+      //url: 'https://siddharthj44.github.io/indexnew.html',
+	  target: 'Inspiring Boards', // optional target for above url
+	  callback: (t) => t.modal({
+		  url: 'https://siddharthj44.github.io/indexnew.html',
+		  fullscreen: true,
+	  }),
+	  
     }];
   },
   'card-back-section': function(t, options){
