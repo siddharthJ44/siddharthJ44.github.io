@@ -18,7 +18,7 @@ window.TrelloPowerUp.initialize({
       url: 'https://siddharthj44.github.io/indexnew.html',
       target: 'Inspiring Boards' // optional target for above url
     }];
-  }/*,
+  },
   'card-back-section': function(t, options){
     return {
       title: 'My Card Back Section',
@@ -33,5 +33,5 @@ window.TrelloPowerUp.initialize({
         },
       }
     };
-  }*/
+  }
 });
